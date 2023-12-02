@@ -36,7 +36,6 @@ app.post('/index',(req,res)=>{
 app.get('/data',async(req,res)=>{
     const docs = await User.find({})
     res.json(docs);
-
 })
 
 app.listen(port,()=>{
